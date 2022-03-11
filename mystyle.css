@@ -1,0 +1,34 @@
+h1 {
+  color: #21bd89;
+  background-color: #8ce715
+}
+h2 {
+  color:rgb(188, 216, 30) ;
+}
+#Amusement {
+    font-family: Comic, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #Amusement td,
+  #Amusement th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+  }
+  
+  #Amusement tr:nth-child(even) {
+    background-color: #21bd89;
+  }
+  
+  #Amusement tr:hover {
+    background-color: rgb(33, 161, 65);
+  }
+  
+  #Amusement th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: #8ce715;
+    color: rgb(33, 161, 65);
+  }
