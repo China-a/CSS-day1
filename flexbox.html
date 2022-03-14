@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.container{
+        background-color:olive;
+        display: flex; 
+}
+    .C {
+            margin-left: auto;
+        }
+.sample {
+            flex: 1;
+        }
+        .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #73ad21;
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .position{
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+      }
+      .right {
+float: right;
+width: 300px;
+border: 3px solid #73AD21;
+padding: 10px;
+}
+div {border: 3px solid #4CAF50;
+  padding: 5px;
+}
+.img1 {
+  float: right;
+}
+.img2 {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        </style>
+    
+</head>
+<body>
+<nav class="container">  
+  <div style ="background-color: darkcyan"">A</div>  
+  <div class="sample"style= "background-color:darkorange">B</div>  
+  <div style=" background-color: darkred ">C</div>  
+</nav>
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+<div class="center">
+  <p>Much better!</p>
+</div>
+<br><br>
+<img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+<br><br>
+<div class="position">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<div>
+    <p class="right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ipsa magnam unde aut. Sed expedita numquam soluta enim tenetur. Amet aliquam nostrum ut corporis pariatur velit id possimus, delectus a.</p>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="img1" src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cat under Blanket" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cat under blanket" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+</body>
+</html>
